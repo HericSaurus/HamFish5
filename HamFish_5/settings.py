@@ -117,3 +117,8 @@ STATIC_URL = '/static/'
 
 # crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+# user
+LOGIN_REDIRECT_URL = 'blog-home'
+LOGIN_URL = 'login'
