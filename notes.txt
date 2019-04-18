@@ -4,6 +4,8 @@
 2.try develope each individual app properly,maybe add requirement.txt for each app, so next time can simply re-use the app
 
 
+3. Date formatting for django
+https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#date
 
 HamFish_5 Notes:
 0. Add app into installed app
