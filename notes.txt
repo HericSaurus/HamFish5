@@ -1,0 +1,28 @@
+1.tutorial django_project == HamFish_5
+
+
+2.try develope each individual app properly,maybe add requirement.txt for each app, so next time can simply re-use the app
+
+
+
+HamFish_5 Notes:
+0. Add app into installed app
+1. Set up view->urls->
+
+2. Do template
+
+3. view context
+    
+    def home(request):
+    context = {
+        #key  : data
+        'posts'**: posts
+    }
+    return render(request, 'blog/home.html', context)
+
+     {% for post in posts** %}
+            <h1>{{ post.title }}</h1>
+    
+    {% endfor %}
+
+    pass model into views, access through key, use the key in template 
