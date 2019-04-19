@@ -33,3 +33,17 @@ HamFish_5 Notes:
     {% endfor %}
 
     pass model into views, access through key, use the key in template 
+
+
+4. Class Based view 
+    Model-> view -> urls
+    must use template naming convention, <app>/<model>_<view_type>.html
+    or change 
+
+    context by dafault call object list
+    else use : context_object_name = 'key'
+
+    save lines of codes if stick to convention naming
+    SOP : models->views->urls->template
+
+    ps: CreateView use template <model>_form.html
