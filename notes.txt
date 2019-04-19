@@ -1,3 +1,7 @@
+Virtual environment : hamfish5
+
+
+
 1.tutorial django_project == HamFish_5
 
 
