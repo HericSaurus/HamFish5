@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#date
 4. For deployment, need study deploy static file
 ps: upload file in dev and deployment very diff
 
+5. Whne {{}} when {%%}
+
 HamFish_5 Notes:
 0. Add app into installed app
 1. Set up view->urls->
