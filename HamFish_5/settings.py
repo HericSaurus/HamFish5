@@ -44,6 +44,10 @@ INSTALLED_APPS = [
 
     # django-extension for SSL
     'django_extensions',
+
+    # ckeditor
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 # allauth
@@ -133,6 +137,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # profile picture
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -154,3 +159,15 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('HAMFISH_5_EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('HAMFISH_5_EMAIL_PASS')
+
+
+# CKEditor
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = 'pillow'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}

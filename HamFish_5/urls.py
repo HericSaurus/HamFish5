@@ -38,6 +38,10 @@ urlpatterns = [
 
     # allauth
     path('accounts/', include('allauth.urls')),
+
+    # ckeditor
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
     # blog section urls
     path('', include('blog.urls')),
 

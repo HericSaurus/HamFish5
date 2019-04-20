@@ -25,7 +25,12 @@ ps: upload file in dev and deployment very diff
     $ python manage.py runserver_plus --cert-file /tmp/cert.crt
 
     https://developers.facebook.com/apps/1087509931434191/fb-login/quickstart/
-    
+
+
+7. ckeditor 
+    remember use filter |safe in order to display result in {{ tag }}
+
+
 HamFish_5 Notes:
 0. Add app into installed app
 1. Set up view->urls->
