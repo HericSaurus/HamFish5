@@ -36,6 +36,8 @@ urlpatterns = [
          ),
          name='password_reset_complete'),
 
+    # allauth
+    path('accounts/', include('allauth.urls')),
     # blog section urls
     path('', include('blog.urls')),
 

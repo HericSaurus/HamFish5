@@ -26,6 +26,15 @@
             <a class="ml-2" href="{% url 'register' %}">Sign Up</a>
         </small>
     </div>
+
+    {% load socialaccount %}
+
+    <h4>OR log in with:</h4>
+
+    <p><a href="{% provider_login_url 'facebook' %}">Log In with Facebook</a></p>
+    <p><a href="{% provider_login_url 'google' %}">Log In with Gmail</a></p>
+
+
 </div>
 
 {% endblock content %}

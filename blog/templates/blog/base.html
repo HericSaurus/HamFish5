@@ -55,6 +55,11 @@
         </nav>
     </header>
 
+    <!--Allauth-->
+    {% if user.is_authenticated %}
+    hello {{ user.username }}
+    {% endif %}
+
 
     <main role="main" class="container">
         <div class="row">

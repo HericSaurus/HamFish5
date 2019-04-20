@@ -16,6 +16,16 @@ ps: upload file in dev and deployment very diff
 
 5. Whne {{}} when {%%}
 
+6. FB log in used SSL in development, maybe need switch https after live?
+    we used:
+        pip install django-extensions
+        pip install Werkzeug
+        pip install pyOpenSSL
+
+    $ python manage.py runserver_plus --cert-file /tmp/cert.crt
+
+    https://developers.facebook.com/apps/1087509931434191/fb-login/quickstart/
+    
 HamFish_5 Notes:
 0. Add app into installed app
 1. Set up view->urls->
