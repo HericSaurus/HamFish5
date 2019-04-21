@@ -4,6 +4,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
+from ckeditor_uploader import views as ckeditor_views
+from django.views.decorators.cache import never_cache
 
 
 urlpatterns = [
@@ -40,7 +42,9 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
 
     # ckeditor
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+    #    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('upload/', ckeditor_views.upload, name='ckeditor_upload'),
+    path('browse/', never_cache(ckeditor_views.browse), name='ckeditor_browse'),
 
     # blog section urls
     path('', include('blog.urls')),
