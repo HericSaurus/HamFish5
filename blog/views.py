@@ -14,13 +14,6 @@ from .models import Post
 # function view
 
 
-def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/home.html', context)
-
-
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
 
@@ -33,7 +26,7 @@ class PostListView(ListView):
     # <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
     ordering = ['-date_posted']
-    paginate_by = 5
+    paginate_by = 6
 
 
 # class based view following convention naming
@@ -44,7 +37,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'content']
+    fields = ['title', 'feature_img', 'excerpt', 'content']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -53,7 +46,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
-    fields = ['title', 'content']
+    fields = ['title', 'feature_img', 'excerpt', 'content']
 
     def form_valid(self, form):
         form.instance.author = self.request.user

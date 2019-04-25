@@ -1,0 +1,60 @@
+.navbar-brand-logo {
+    max-width: 200px;
+}
+
+.navbar-brand-logo img {
+    max-width: 100%;
+}
+
+.user-profile-pic-navbar-div {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.user-profile-pic-navbar-div img {
+    max-width: 100%;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.fa-edit {
+    color: gray;
+}
+
+.fa-search {
+    color: gray;
+}
+
+.carousel-item {
+    height: 80vh;
+}
+
+/*
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+}
+*/
+.carousel-caption h5 {
+    font-size: 4rem;
+}
+
+.carousel-caption p {
+    font-size: 2rem;
+}
+
+.carousel-button {
+    font-size: 1.5rem;
+}
+
+.footer-social-media-icon-div {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social-media-icon-div img {
+    max-width: 100%;
+}
